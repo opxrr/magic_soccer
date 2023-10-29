@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:magic_soccer/UI/questions_screen.dart';
 import '../validation_utils.dart';
 import 'custome_form_field.dart';
 import 'register_screen.dart';
@@ -82,7 +82,7 @@ class _LoginState extends State<Login> {
                           backgroundColor: Colors.yellow
                       ),
                       onPressed: (){
-                        //  Register();
+                        Navigator.pushReplacementNamed(context, QuestionsScreen.routeName);
                       },
                       child:const Text('Login',
                         style: TextStyle(
