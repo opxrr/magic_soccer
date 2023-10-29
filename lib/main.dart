@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:magic_soccer/UI/questions_screen.dart';
 
 import 'UI/login_screen.dart';
 import 'UI/register_screen.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
       routes: {
         RegisterScreen.routeName : (_) => RegisterScreen(),
         Login.routeName : (_) => Login(),
+        QuestionsScreen.routeName : (_) => QuestionsScreen(),
       },
       initialRoute: RegisterScreen.routeName,
     );
