@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
           ),
         ),
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
             backgroundColor: Colors.transparent,
             elevation: 0,
             centerTitle: true,
@@ -38,8 +38,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       routes: {
-        RegisterScreen.routeName : (_) => RegisterScreen(),
-        Login.routeName : (_) => Login(),
+        RegisterScreen.routeName : (_) => const RegisterScreen(),
+        Login.routeName : (_) => const Login(),
         QuestionsScreen.routeName : (_) => QuestionsScreen(),
       },
       initialRoute: RegisterScreen.routeName,

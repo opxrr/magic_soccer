@@ -32,6 +32,12 @@ class _LoginState extends State<Login> {
       ),
       child: Scaffold(
         appBar: AppBar(
+          leading: BackButton(
+            color: Colors.yellow,
+            onPressed: (){
+              Navigator.pushReplacementNamed(context, 'questions-screen');
+            },
+          ),
           title: Text('Login'),
         ),
         body:  Container(
