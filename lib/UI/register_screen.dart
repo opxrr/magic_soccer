@@ -33,6 +33,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
       ),
       child: Scaffold(
         appBar: AppBar(
+          leading: BackButton(
+            color: Colors.yellow,
+          ),
           title:const Text('Register'),
         ),
         body: Container(
