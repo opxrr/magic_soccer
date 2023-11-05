@@ -16,7 +16,7 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(BuildContext context) {
     Map<String, String> questionMap =
-    extractQuestionsAndAnswers('assets/text/qText.txt');
+    extractQuestionsAndAnswers('${loadAsset('assets/text/qText.txt')}');
     return Container(
       decoration: const BoxDecoration(
         image: DecorationImage(
