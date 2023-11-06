@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:magic_soccer/UI/questions_control.dart';
 import 'package:magic_soccer/UI/questions_screen.dart';
 
 import 'UI/login_screen.dart';
 import 'UI/register_screen.dart';
 
+QuestionsControl questionsControl = QuestionsControl();
 
 void main() {
   runApp(const MyApp());
